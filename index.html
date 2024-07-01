@@ -1,0 +1,489 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Souled Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .Header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+        .Logo h1 {
+            margin: 0;
+            color: red; 
+        }
+        .Nav {
+            display: flex;
+            align-items: center;
+        }
+        .Nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        .Nav ul li {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .Nav ul li i {
+            margin-left: 10px;
+        }
+        .Nav .icons {
+            display: flex;
+            align-items: center;
+        }
+        .Nav .icons i {
+            margin-left: 15px;
+            font-size: 18px;
+        }
+        .Banner img {
+            width: 100%;
+            height: auto;
+        }
+        .products {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+        }
+        .sidebar input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .products-container {
+            width: 80%;
+            padding: 20px;
+        }
+        .products-container h1 {
+            text-align: center;
+        }
+        .Dress-grid-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .Dress-grid {
+            width: 23%;
+            text-align: center;
+        }
+        .Dress-grid img {
+            width: 100%;
+            height: auto;
+        }
+        .Blog {
+            padding: 20px;
+            text-align: left;
+        }
+        .Blog h2 {
+            text-align: center;
+        }
+        .Blog-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .Blog-grid img {
+            width: 30%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <div class="Logo">
+            <h1>Grid.</h1>
+        </div>
+        <div class="Nav">
+            <ul>
+                <li>SUMMER*24 <sup class="navitem1">New</sup></li>
+                <li class="navitem2">TOPWEAR</li>
+                <li class="navitem3">BOTTOMWEAR</li>
+                <li class="navitem4">SHOES & ACCESSORIES</li>
+                <li class="navitem5">RESTOCKED</li>
+                <li class="navitem6">THEMES</li>
+            </ul>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </div>
+    </div>
+    <div class="Banner">
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage_Banner__1_ycCzHWB.jpg?format=webp&w=1500&dpr=1.3" alt="Banner">
+    </div>
+    <div class="products">
+        <div class="sidebar">
+            <h3>Products</h3>
+            <input type="text" placeholder="Search for Products">
+            <ul>
+                <li><input type="checkbox"> Women Boyfriend Shirts</li>
+                <li><input type="checkbox"> Women Bralette</li>
+                <li><input type="checkbox"> Women Cargo Jeans</li>
+                <li><input type="checkbox"> Women Cargo Joggers</li>
+                <li><input type="checkbox"> Women Cropped Tops</li>
+                <li><input type="checkbox"> Women Denim Jackets</li>
+                <li><input type="checkbox"> Women Jeans</li>
+                <li><input type="checkbox"> Women Joggers</li>
+                <li><input type="checkbox"> Women Oversized Cropped T-Shirts</li>
+                <li><input type="checkbox"> Women Oversized Shirts</li>
+                <li><a href="#">+6 more</a></li>
+            </ul>
+        </div>
+        <div class="products-container">
+            <div class="Dress-grid-container">
+                <div class="Dress-grid">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_1_NMLfg9W.jpg?format=webp&w=360&dpr=2.0" alt="Dress1">
+                    <p>TSS Originals: Aruba</p>
+                    <p>Shirts</p>
+                    <p>Rs. 1499</p>
+                </div>
+                <div class="Dress-grid">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_7_Q1nfyjY.jpg?format=webp&w=360&dpr=2.0" alt="Dress2">
+                    <p>TSS Originals: Sticky Note</p>
+                    <p>T-shirts</p>
+                    <p>Rs. 799</p>
+                </div>
+                <div class="Dress-grid">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_6_IzbGAzQ.jpg?format=webp&w=360&dpr=2.0" alt="Dress3">
+                    <p>Parachute Pants: Brown</p>
+                    <p>Jeans</p>
+                    <p>Rs. 1999</p>
+                </div>
+                <div class="Dress-grid">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_4_eVE7L7G.jpg?format=webp&w=360&dpr=2.0" alt="Dress4">
+                    <p>Winnie the Pooh: Blush Bear</p>
+                    <p>Tops</p>
+                    <p>Rs. 799</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="Blog">
+        <h2>Fresh from the Blog -></h2>
+        <div class="Blog-grid">
+            <img src="https://i.etsystatic.com/39201069/r/il/38855a/5635568949/il_340x270.5635568949_mfqp.jpg" alt="Comfy Bed">
+            <img src="https://i.etsystatic.com/31590469/c/2250/1786/0/960/il/9b9429/5889052448/il_340x270.5889052448_t74e.jpg" alt="Bag">
+            <img src="https://i.etsystatic.com/25947065/r/il/a5b747/5936505819/il_340x270.5936505819_7bsw.jpg" alt="Gift">
+        </div>
+    </section>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Souled Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .Header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+        .Logo h1 {
+            margin: 0;
+            color: red;
+        }
+        .Nav {
+            display: flex;
+            align-items: center;
+        }
+        .Nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        .Nav ul li {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .Nav ul li i {
+            margin-left: 10px;
+        }
+        .Nav .icons {
+            display: flex;
+            align-items: center;
+        }
+        .Nav .icons i {
+            margin-left: 15px;
+            font-size: 18px;
+        }
+        .Banner img {
+            width: 100%;
+            height: auto;
+        }
+        .products {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+        }
+        .sidebar input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .products-container {
+            width: 80%;
+            padding: 20px;
+        }
+        .products-container h1 {
+            text-align: center;
+        }
+        .Dress-grid-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .Dress-grid {
+            width: 23%;
+            text-align: center;
+        }
+        .Dress-grid img {
+            width: 100%;
+            height: auto;
+        }
+        .Blog {
+            padding: 20px;
+        }
+        .Blog h2 {
+            text-align: center;
+        }
+        .Blog-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .Blog-grid img {
+            width: 30%;
+            height: auto;
+        }
+        .contact {
+            padding: 20px;
+            background-color: white;
+        }
+        .contact h1 {
+            text-align: center;
+            color: red;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .contact-form, .contact-details {
+            width: 45%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            color: red;
+        }
+        .contact-form label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: darkred;
+        }
+        .contact-details p {
+            margin-top: 0;
+        }
+        .contact-details a {
+            color: red;
+            text-decoration: none;
+        }
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <div class="Logo">
+            <h1>Grid.</h1>
+        </div>
+        <div class="Nav">
+            <ul>
+                <li>SUMMER*24 <sup class="navitem1">New</sup></li>
+                <li class="navitem2">TOPWEAR</li>
+                <li class="navitem3">BOTTOMWEAR</li>
+                <li class="navitem4">SHOES & ACCESSORIES</li>
+                <li class="navitem5">RESTOCKED</li>
+                <li class="navitem6">THEMES</li>
+            </ul>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </div>
+    </div>
+    <div class="Banner">
+        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage_Banner__1_ycCzHWB.jpg?format=webp&w=1500&dpr=1.3" alt="Banner">
+    </div>
+    <div class="products">
+        <div class="sidebar">
+            <h3>Products</h3>
+            <input type="text" placeholder="Search for Products">
+            <ul>
+                <li><input type="checkbox"> Women Boyfriend Shirts</li>
+                <li><input type="checkbox"> Women Bralette</li>
+                <li><input type="checkbox"> Women Cargo Jeans</li>
+                <li><input type="checkbox"> Women Cargo Joggers</li>
+                <li><input type="checkbox"> Women Cropped Tops</li>
+                <li><input type="checkbox"> Women Denim Jackets</li>
+                <li><input type="checkbox"> Women Jeans</li>
+                <li><input type="checkbox"> Women Joggers</li>
+                <li><input type="checkbox"> Women Oversized Cropped T-Shirts</li>
+                <li><input type="checkbox"> Women Oversized Shirts</li>
+                <li><a href="#">+6 more</a></li>
+            </ul>
+        </div>
+        <div class="products-container">
+            <h1>PRODUCTS</h1>
+            <div class="Dress-grid-container">
+                <div class="Dress-grid">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_1_NMLfg9W.jpg?format=webp&w=360&dpr=2.0" alt="Dress1">
+                    <p>TSS Originals: Aruba</p>
+                    <p>Shirts</p>
+                    <p>Rs. 1499</p>
+                </div>
+                <div class="Dress-grid">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_7_Q1nfyjY.jpg?format=webp&w=360&dpr=2.0" alt="Dress2">
+                    <p>TSS Originals: Sticky Note</p>
+                    <p>T-shirts</p>
+                    <p>Rs. 799</p>
+                </div>
+                <div class="Dress-grid">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_6_IzbGAzQ.jpg?format=webp&w=360&dpr=2.0" alt="Dress3">
+                    <p>Parachute Pants: Brown</p>
+                    <p>Jeans</p>
+                    <p>Rs. 1999</p>
+                </div>
+                <div class="Dress-grid">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top_Selling_4_eVE7L7G.jpg?format=webp&w=360&dpr=2.0" alt="Dress4">
+                    <p>Winnie the Pooh: Blush Bear</p>
+                    <p>Tops</p>
+                    <p>Rs. 799</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="Blog">
+        <h2>Fresh from the Blog -></h2>
+        <div class="Blog-grid">
+            <img src="https://i.etsystatic.com/39201069/r/il/38855a/5635568949/il_340x270.5635568949_mfqp.jpg" alt="Comfy Bed">
+            <img src="https://i.etsystatic.com/31590469/c/2250/1786/0/960/il/9b9429/5889052448/il_340x270.5889052448_t74e.jpg" alt="Bag">
+            <img src="https://i.etsystatic.com/25947065/r/il/a5b747/5936505819/il_340x270.5936505819_7bsw.jpg" alt="Gift">
+        </div>
+    </section>
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Contact Information</h2>
+                <form action="#">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telephone">Telephone</label>
+                    <input type="tel" id="telephone" name="telephone">
+
+                    <label for="comment">Comment *</label>
+                    <textarea id="comment" name="comment" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <p>We at Sunflame rejoice every opportunity which helps us to keep in touch with our customers. So, you can reach us as per your convenience by phone, email or through personal visit to our office.</p>
+                <p><strong>Sunflame Enterprises Private Limited</strong><br>
+                   58, Sector 27C, Mathura Road, Faridabad - 121 003, Haryana, India<br>
+                   +91-129-4266999</p>
+                <p>FOR ANY SALES RELATED ENQUIRY PLEASE MAIL US ON:<br>
+                   <a href="mailto:enquiry@sunflame.com">enquiry@sunflame.com</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
